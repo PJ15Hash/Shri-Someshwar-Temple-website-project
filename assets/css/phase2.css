@@ -1,0 +1,1122 @@
+/* ============================================
+   NEW PHASE 2 COMPONENTS
+   ============================================ */
+
+/* Section Headers Enhancements */
+.section-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: var(--maroon);
+  font-family: 'Merriweather', serif;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--saffron);
+  border-radius: 2px;
+}
+
+.section-header p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   1. Highlights Grid (Home: Temple Highlights)
+   ============================================ */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.highlight-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  border-bottom: 4px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 153, 51, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-8px);
+  border-bottom-color: var(--saffron);
+  box-shadow: 0 15px 35px rgba(255, 153, 51, 0.15);
+}
+
+.highlight-card:hover::before {
+  opacity: 1;
+}
+
+.highlight-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--saffron), #ffb76b);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+  box-shadow: 0 8px 16px rgba(255, 153, 51, 0.3);
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+.highlight-card h3 {
+  color: var(--maroon);
+  font-family: 'Merriweather', serif;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.highlight-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ============================================
+   2. Horizontal Timeline (Home: Upcoming Festivals, About: History)
+   ============================================ */
+.timeline-container {
+  position: relative;
+  padding: 40px 0;
+}
+
+/* Vertical Timeline for About Page */
+.timeline-vertical {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.timeline-vertical::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  background: rgba(255, 153, 51, 0.2);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* right side default */
+}
+
+.timeline-item:nth-child(even) {
+  justify-content: flex-start;
+  /* left side staggered */
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: var(--saffron);
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 153, 51, 0.2);
+  z-index: 2;
+  transition: all 300ms ease;
+}
+
+.timeline-item:hover .timeline-marker {
+  transform: translate(-50%, -50%) scale(1.3);
+  background: var(--maroon);
+  box-shadow: 0 0 0 4px rgba(120, 0, 0, 0.2);
+}
+
+.timeline-content {
+  width: calc(50% - 40px);
+  /* half width minus spacing for center line */
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: transform 300ms ease;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  text-align: right;
+}
+
+.timeline-item:hover .timeline-content {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-date {
+  color: var(--saffron);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.timeline-content h3 {
+  color: var(--maroon);
+  font-family: 'Merriweather', serif;
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+}
+
+.timeline-content p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Horizontal Cards for Festivals */
+.festival-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.festival-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 300ms;
+}
+
+.festival-card:hover {
+  transform: translateY(-8px);
+}
+
+.festival-date-ribbon {
+  background: linear-gradient(90deg, var(--maroon), #9a0000);
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.festival-date-ribbon .day {
+  font-size: 1.4rem;
+  font-family: 'Merriweather', serif;
+}
+
+.festival-date-ribbon .month-year {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.festival-details {
+  padding: 24px;
+}
+
+.festival-details h3 {
+  color: var(--maroon);
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-family: 'Merriweather', serif;
+}
+
+.festival-details p {
+  color: #555;
+  line-height: 1.6;
+}
+
+
+/* ============================================
+   3. Testimonials (Home: Devotee Experience)
+   ============================================ */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.testimonial-quote-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 4rem;
+  color: rgba(255, 153, 51, 0.15);
+  font-family: serif;
+  line-height: 1;
+}
+
+.testimonial-text {
+  font-size: 1.05rem;
+  font-style: italic;
+  color: #555;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 24px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--maroon), var(--saffron));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.author-info h4 {
+  margin: 0;
+  color: var(--maroon);
+  font-size: 1.1rem;
+}
+
+.author-info span {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+
+/* ============================================
+   4. How to Reach / Travel Cards
+   ============================================ */
+.travel-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.travel-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.travel-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--saffron);
+  transition: transform 200ms ease;
+}
+
+.travel-card:hover {
+  transform: translateX(8px);
+}
+
+.travel-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 153, 51, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--saffron);
+  flex-shrink: 0;
+}
+
+.travel-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.travel-info h3 {
+  margin: 0 0 6px 0;
+  color: var(--maroon);
+  font-size: 1.15rem;
+}
+
+.travel-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.travel-map {
+  height: 400px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ============================================
+   5. Deity Cards (About Page)
+   ============================================ */
+.deities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.deity-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 300ms ease;
+}
+
+.deity-card:hover {
+  transform: translateY(-10px);
+}
+
+.deity-image {
+  height: 250px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.deity-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.deity-card:hover .deity-image img {
+  transform: scale(1.08);
+}
+
+.deity-info {
+  padding: 24px;
+}
+
+.deity-info h3 {
+  color: var(--maroon);
+  font-family: 'Merriweather', serif;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.deity-info p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* ============================================
+   6. Visual Schedule Cards (Timings Page)
+   ============================================ */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.schedule-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.schedule-card.morning::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  background: linear-gradient(to bottom, #FFD700, #FFA500);
+}
+
+.schedule-card.evening::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  background: linear-gradient(to bottom, var(--saffron), var(--maroon));
+}
+
+.schedule-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 153, 51, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.schedule-details {
+  flex-grow: 1;
+}
+
+.schedule-details h3 {
+  margin: 0 0 10px 0;
+  color: var(--maroon);
+  font-size: 1.3rem;
+  font-family: 'Merriweather', serif;
+}
+
+.time-block {
+  display: inline-flex;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #333;
+  font-weight: 600;
+  font-family: monospace;
+  font-size: 1.1rem;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.time-block svg {
+  margin-right: 8px;
+  color: var(--saffron);
+}
+
+
+/* ============================================
+   7. Gallery Filters (Gallery Page)
+   ============================================ */
+.gallery-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: white;
+  border: 2px solid rgba(255, 153, 51, 0.3);
+  color: var(--maroon);
+  padding: 8px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-size: 0.95rem;
+}
+
+.filter-btn:hover {
+  background: rgba(255, 153, 51, 0.1);
+}
+
+.filter-btn.active {
+  background: var(--saffron);
+  border-color: var(--saffron);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 153, 51, 0.4);
+}
+
+/* Enhanced Masonry Overlay */
+.masonry-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.masonry-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(120, 0, 0, 0.9), transparent);
+  padding: 30px 20px 20px;
+  color: white;
+  transform: translateY(100%);
+  transition: transform 300ms ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.masonry-item:hover .masonry-overlay {
+  transform: translateY(0);
+}
+
+.masonry-overlay h4 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.masonry-overlay span {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* ============================================
+   8. Seva Cards (Donations Page)
+   ============================================ */
+.seva-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.seva-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-top: 4px solid var(--saffron);
+  transition: transform 300ms ease;
+}
+
+.seva-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.seva-icon {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.seva-card h3 {
+  color: var(--maroon);
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.seva-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+/* Bank Info Styling */
+.bank-info-card {
+  background: linear-gradient(135deg, rgba(255, 153, 51, 0.1), rgba(120, 0, 0, 0.05));
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 153, 51, 0.2);
+}
+
+.bank-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin: 24px 0;
+  text-align: left;
+}
+
+.bank-detail-item {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.bank-detail-item strong {
+  display: block;
+  color: var(--saffron);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.bank-detail-item span {
+  color: var(--maroon);
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+/* ============================================
+   RESPONSIVE OVERRIDES FOR NEW COMPONENTS
+   ============================================ */
+@media (max-width: 900px) {
+  .travel-section {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-vertical::before {
+    left: 20px;
+  }
+
+  .timeline-item,
+  .timeline-item:nth-child(even) {
+    justify-content: flex-end;
+  }
+
+  .timeline-marker {
+    left: 20px;
+  }
+
+  .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    width: calc(100% - 60px);
+    text-align: left;
+  }
+
+  .bank-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================
+   9. About Page Banner & Origins
+   ============================================ */
+.about-hero-banner {
+  background: linear-gradient(to right, #7a0000, #9a0000);
+  background: var(--maroon);
+  /* Fallback */
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-banner::before {
+  content: 'ॐ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.05);
+  font-family: serif;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about-hero-banner h1 {
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 2.22rem;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-banner .banner-subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  margin-top: 8px;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.heritage-section {
+  padding-bottom: 60px;
+}
+
+/* Enhancing Timings Tables for Phase 2 */
+.timings-table thead {
+  background: rgba(107, 15, 15, 0.03);
+}
+
+.timings-table tr:hover {
+  background: rgba(255, 153, 51, 0.05);
+  transition: background 200ms ease;
+}
+
+.timings-table td {
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.heritage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-hero-banner h1 {
+    font-size: 2rem;
+  }
+
+  .heritage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.om-header-separator {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--saffron);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-family: serif;
+  letter-spacing: 5px;
+}
+
+.om-header-separator span {
+  font-weight: 300;
+  opacity: 0.7;
+}
+
+
+/* ============================================
+   10. Premium Committee Redesign
+   ============================================ */
+.premium-committee-page {
+  background: #fdfcf9;
+}
+
+.committee-hero {
+  position: relative;
+  height: 400px;
+  background: url('../images/temple-view.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(74, 9, 9, 0.7), rgba(0, 0, 0, 0.5));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+}
+
+.committee-hero h1 {
+  font-size: 3.5rem;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 15px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-line {
+  width: 80px;
+  height: 4px;
+  background: var(--saffron);
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.committee-hero .banner-subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.trustees-section {
+  padding-bottom: 80px;
+}
+
+.decorative-top {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.om-icon {
+  font-size: 2rem;
+  color: var(--saffron);
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.om-icon::before,
+.om-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 1px;
+  background: var(--saffron);
+}
+
+.om-icon::before {
+  right: 100%;
+}
+
+.om-icon::after {
+  left: 100%;
+}
+
+.section-title-wrapper {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.premium-title {
+  font-size: 2.75rem;
+  color: var(--maroon);
+  font-family: 'Merriweather', serif;
+  margin-bottom: 15px;
+}
+
+.section-desc {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.premium-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+/* Glass Card Styles */
+.glass-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+}
+
+.glass-card .card-glow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 153, 51, 0.05) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.glass-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 45px rgba(120, 0, 0, 0.08);
+  border-color: rgba(255, 153, 51, 0.3);
+}
+
+.glass-card:hover .card-glow {
+  opacity: 1;
+}
+
+.member-image-wrapper {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 25px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, rgba(255, 153, 51, 0.2), rgba(120, 0, 0, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.glass-card .member-placeholder {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--maroon);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.5s;
+}
+
+.glass-card:hover .member-placeholder {
+  transform: scale(1.05);
+}
+
+.member-details {
+  position: relative;
+  z-index: 2;
+}
+
+.member-name {
+  color: var(--maroon);
+  font-family: 'Merriweather', serif;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.member-position {
+  color: var(--saffron);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.member-contact {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-top: 15px;
+  margin-top: 10px;
+}
+
+.contact-item {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.contact-item i {
+  font-style: normal;
+  font-size: 1rem;
+}
+
+/* Featured Card Styles */
+.glass-card.destaque {
+  border: 1px solid rgba(255, 153, 51, 0.4);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+  .committee-hero {
+    height: 300px;
+  }
+
+  .committee-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .premium-title {
+    font-size: 2.2rem;
+  }
+
+  .premium-grid {
+    grid-template-columns: 1fr;
+    padding: 0 15px;
+  }
+}

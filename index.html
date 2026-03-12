@@ -1,370 +1,457 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Shri Someshwara Temple Hoskeri</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/phase2.css">
 </head>
+
 <body>
-<div class="topbar"><div class="container"><span class="top-text"> || ॐ Shri Someshwara Prasanna ||</span></div></div>
-<header class="navbar" role="banner">
-  <div class="nav-inner container">
-    <div class="brand">
-      <img src="assets/images/main-god.jpg" alt="logo">
-      <div><div class="title">Shri Someshwara Temple</div><div class="subtitle">Hoskeri, Gokarna</div></div>
+  <div class="topbar">
+    <div class="container"><span class="top-text" data-i18n="topbar_text"> || ॐ Shri Someshwara Prasanna ||</span></div>
+  </div>
+  <header class="navbar" role="banner">
+    <div class="nav-inner container">
+      <div class="brand">
+        <img src="assets/images/main-god.jpg" alt="logo" loading="lazy">
+        <div>
+          <div class="title" data-i18n="brand_title">Shri Someshwara Temple</div>
+          <div class="subtitle" data-i18n="brand_subtitle">Hoskeri, Gokarna</div>
+        </div>
+      </div>
+      <nav class="navlinks" role="navigation" aria-label="Main">
+        <a href="index.html" class="active" data-i18n="nav_home">Home</a>
+        <a href="about.html" data-i18n="nav_about">About</a>
+        <a href="timings.html" data-i18n="nav_timings">Timings</a>
+        <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+        <a href="donations.html" data-i18n="nav_donations">Donations</a>
+        <a href="contact.html" data-i18n="nav_contact">Contact</a>
+
+        <div class="lang-switcher"
+          style="display:inline-block; margin-left:15px; border-left:1px solid #ccc; padding-left:15px;">
+          <button data-lang="en" class="lang-btn"
+            style="background:none;border:none;cursor:pointer;font-size:14px;color:black;">EN</button> |
+          <button data-lang="kn" class="lang-btn"
+            style="background:none;border:none;cursor:pointer;font-size:14px;color:black;">KN</button> |
+          <button data-lang="hi" class="lang-btn"
+            style="background:none;border:none;cursor:pointer;font-size:14px;color:black;">HI</button>
+        </div>
+      </nav>
+      <button class="hamburger" aria-label="Open menu">☰</button>
     </div>
-    <nav class="navlinks" role="navigation" aria-label="Main">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="timings.html">Timings</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="donations.html">Donations</a>
-      <a href="contact.html">Contact</a>
-      <a href="committee.html">Committee</a>
+  </header>
+  <div class="mobile-overlay"></div>
+  <aside class="mobile-panel" aria-hidden="true">
+    <button class="close" aria-label="Close menu">✖</button>
+    <nav>
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+      <a href="timings.html" data-i18n="nav_timings">Timings</a>
+      <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+      <a href="donations.html" data-i18n="nav_donations">Donations</a>
+      <a href="contact.html" data-i18n="nav_contact">Contact</a>
     </nav>
-    <button class="hamburger" aria-label="Open menu">☰</button>
-  </div>
-</header>
-<div class="mobile-overlay"></div>
-<aside class="mobile-panel" aria-hidden="true">
-  <button class="close" aria-label="Close menu">✖</button>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="timings.html">Timings</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="donations.html">Donations</a>
-    <a href="contact.html">Contact</a>
-    <a href="committee.html">Committee</a>
-  </nav>
-</aside>
+  </aside>
 
-<main>
-  <section class="hero" id="home">
-    <div class="hero-card container">
-      <div class="hero-media"><img src="assets/images/main-god.jpg" alt="Shri Someshwara Hoskeri"></div>
-      <div class="hero-content">
-        <h1>Shri Someshwara Temple Hoskeri, Gokarna</h1>
-        <p class="mantra">| ॐ नमः शिवाय |</p>
-        <a href="about.html" class="name-badge">About the Temple</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container">
-    <div class="card">
-      <h2>Daily Rituals, Festivals and Weekly Activities</h2>
-      <p><strong>General Dharshan Timings:</strong> 7AM - 8PM</p>
-      <p><strong>Festivals:</strong> Makar Sankranti, Maha Shivratri, Chaitra Purnima, Ganesh Chaturthi</p>
-      <p style="margin-top:12px;">Morning & evening aarti, bhajans and regular poojas for devotees. All are welcome to participate.</p>
-    </div>
-  </section>
-
- <!-- Gallery Preview section  -->
-
-<section class="section pattern-section">
-  <div class="container">
-    <h2>Gallery Preview</h2>
-    <div class="gallery-slider-container">
-      <div class="gallery-slider-inner">
-        <div class="gallery-slider" id="gallerySlider">
-          <!-- Slide 1 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Etrance4.JPG" alt="Temple View 1">
-          </div>
-          <!-- Slide 2 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Etrance6.JPG" alt="Temple View 2">
-          </div>
-          <!-- Slide 3 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Etrance7.JPG" alt="Temple View 3">
-          </div>
-          <!-- Slide 4 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Outerview1.JPG" alt="Temple View 4">
-          </div>
-          <!-- Slide 5 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Outerview2.JPG" alt="Temple View 5">
-          </div>
-          <!-- Slide 6 -->
-          <div class="gallery-slide">
-            <img src="assets/images/MainGodFarview nandi3.JPG" alt="Temple View 6">
-          </div>
-          <!-- Slide 7 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Godwithbhat1.JPG" alt="Temple View 7">
-          </div>
-         <!-- Slide 8 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Devotees2.JPG" alt="Temple View 8">
-          </div>
-          <!-- Slide 9 -->
-          <div class="gallery-slide">
-            <img src="assets/images/GateFarview1.JPG" alt="Temple View 9">
-          </div>
-          <!-- Slide 10 -->
-          <div class="gallery-slide">
-            <img src="assets/images/Outerfarview4.JPG" alt="Temple View 10">
-          </div>   
-
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-card container">
+        <div class="hero-media"><img src="assets/images/main-god.jpg" alt="Shri Someshwara Hoskeri" loading="lazy">
         </div>
-        
-        <!-- Navigation Controls -->
-        <div class="slider-controls">
-          <button class="slider-btn" id="galleryPrev" aria-label="Previous">‹</button>
-          <button class="slider-btn" id="galleryNext" aria-label="Next">›</button>
+        <div class="hero-content">
+          <h1 data-i18n="hero_title">Shri Someshwara Temple Hoskeri, Gokarna</h1>
+          <p class="mantra">| ॐ नमः शिवाय |</p>
+          <a href="about.html" class="name-badge" data-i18n="hero_badge">About the Temple</a>
         </div>
-        
-        <!-- Dots Navigation -->
-        <div class="slider-dots" id="galleryDots"></div>
       </div>
-    </div>
-  </div>
-</section>
-      
-      
-      
-      <!-- Dots Navigation -->
-      <div class="slider-dots" id="galleryDots"></div>
-    </div>
-  </div>
-</section>
+    </section>
 
-  <section class="section container">
-  <h2>Temple Announcements</h2>
-  <div class="announcements-grid">
-    <!-- Announcement Card 1 -->
-    <div class="announcement-card">
-      <div class="announcement-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-        </svg>
-      </div>
-      <div class="announcement-content">
-        <div class="announcement-date">January 15, 2025</div>
-        <h3>Maha Shivratri Celebrations</h3>
-        <p>Join us for the grand Maha Shivratri festivities. Special abhishekam and night-long bhajans. Prasadam will be distributed to all devotees.</p>
-        <span class="announcement-badge important">Important</span>
-      </div>
-    </div>
 
-    <!-- Announcement Card 2 -->
-    <div class="announcement-card">
-      <div class="announcement-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-          <line x1="16" y1="2" x2="16" y2="6"></line>
-          <line x1="8" y1="2" x2="8" y2="6"></line>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-      </div>
-      <div class="announcement-content">
-        <div class="announcement-date">January 10, 2025</div>
-        <h3>Special Pooja Timings</h3>
-        <p>Updated temple timings for the upcoming festival season. Morning pooja starts at 5:30 AM. Please plan your visit accordingly.</p>
-        <span class="announcement-badge event">Event</span>
-      </div>
-    </div>
 
-    <!-- Announcement Card 3 -->
-    <div class="announcement-card">
-      <div class="announcement-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-        </svg>
-      </div>
-      <div class="announcement-content">
-        <div class="announcement-date">January 5, 2025</div>
-        <h3>Annadanam Program Launch</h3>
-        <p>New daily annadanam (free food distribution) program starting this month. Seeking volunteers and sponsors for this noble cause.</p>
-        <span class="announcement-badge general">General</span>
-      </div>
-    </div>
-  </div>
-</section>
 
-  <!-- Replace the existing Committee section with this -->
-<section class="section container">
-  <h2>Trust & Committee</h2>
-  <div class="committee-slider-container">
-    <div class="committee-slider-wrapper">
-      <div class="committee-slider" id="committeeSlider">
-        <!-- Member 1 -->
-        <div class="committee-slide">
-          <div class="committee-member-card">
-            <img src="assets/images/members/member1.jpg" alt="Member 1">
-            <strong>Shri sai Kumar</strong>
-            <div class="role">President</div>
+    <!-- Temple Schedule Section -->
+    <section class="section container" id="temple-schedule">
+      <div class="section-header">
+        <h2 data-i18n="schedule_title">Temple Schedule</h2>
+        <p data-i18n="schedule_desc">Join us for daily poojas and darshan. The temple is open for all devotees during
+          these hours.</p>
+      </div>
+
+      <div class="schedule-grid">
+        <!-- Morning Schedule -->
+        <div class="schedule-card morning">
+          <div class="schedule-icon">🌅</div>
+          <div class="schedule-details">
+            <h3 data-i18n="sched_morning_title">Morning Darshan & Pooja</h3>
+            <div class="time-block">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span data-i18n="sched_morning_time">06:00 AM - 12:30 PM</span>
+            </div>
+            <p style="margin-top: 12px; color: #666; font-size: 0.95rem;" data-i18n="sched_morning_desc">Includes
+              Suprabhata, Abhisheka, and Maha Pooja.</p>
           </div>
         </div>
-        <!-- Member 2 -->
-        <div class="committee-slide">
-          <div class="committee-member-card">
-            <img src="assets/images/members/member2.jpg" alt="Member 2">
-            <strong>Shri pavan Bhat</strong>
-            <div class="role">Vice President</div>
-          </div>
-        </div>
-        <!-- Member 3 -->
-        <div class="committee-slide">
-          <div class="committee-member-card">
-            <img src="assets/images/members/member3.jpg" alt="Member 3"> 
-            <strong>Shri Vinayak shet</strong>
-            <div class="role">Secretary</div>
-          </div>
-        </div>
-        <!-- Member 4 -->
-        <div class="committee-slide">
-          <div class="committee-member-card">
-            <img src="assets/images/members/member4.jpg" alt="Member 4">
-            <strong>Shri Purandar Shet</strong>
-            <div class="role">Treasurer</div>
-          </div>
-        </div>
-        <!-- Member 5 -->
-        <div class="committee-slide">
-          <div class="committee-member-card">
-            <img src="assets/images/members/member5.jpg" alt="Member 5">
-            <strong>Shri Bharat Hegde</strong>
-            <div class="role">Committee Member</div>
+
+        <!-- Evening Schedule -->
+        <div class="schedule-card evening">
+          <div class="schedule-icon">🪔</div>
+          <div class="schedule-details">
+            <h3 data-i18n="sched_evening_title">Evening Darshan & Aarti</h3>
+            <div class="time-block">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span data-i18n="sched_evening_time">04:30 PM - 08:30 PM</span>
+            </div>
+            <p style="margin-top: 12px; color: #666; font-size: 0.95rem;" data-i18n="sched_evening_desc">Includes
+              Sandhya Aarti, Bhajans, and Ratri Pooja.</p>
           </div>
         </div>
       </div>
-    </div>
-    
-    <!-- Navigation Controls -->
-    <div class="committee-slider-controls">
-      <button class="committee-slider-btn" id="committeePrev" aria-label="Previous">‹</button>
-      <button class="committee-slider-btn" id="committeeNext" aria-label="Next">›</button>
-    </div>
-  </div>
-  <p style="margin-top:20px; text-align:center;"><a class="btn" href="committee.html">View full committee</a></p>
-</section>
-</main>
-<footer class="site-footer" role="contentinfo">
-  <div class="container">
-    <!-- About Section -->
-    <div class="footer-section">
-      <div class="om-symbol">ॐ</div>
-      <h3>Shri Someshwara Temple</h3>
-      <p>Hoskeri, Gokarna, Karnataka</p>
-      <p>Ancient temple dedicated to Lord Shiva, serving devotees with divine blessings.</p>
-    </div>
+    </section>
 
-    <!-- Quick Links Section -->
-    <div class="footer-section">
-      <h3>Quick Links</h3>
-      <div class="quick-links-list">
-        <a href="index.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-          </svg>
-          Home
-        </a>
-        <a href="about.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="16" x2="12" y2="12"></line>
-            <line x1="12" y1="8" x2="12.01" y2="8"></line>
-          </svg>
-          About
-        </a>
-        <a href="timings.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          Timings
-        </a>
-        <a href="gallery.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-            <circle cx="8.5" cy="8.5" r="1.5"></circle>
-            <polyline points="21 15 16 10 5 21"></polyline>
-          </svg>
-          Gallery
-        </a>
-        <a href="donations.html">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-          </svg>
-          Donations
-        </a>
+    <!-- Section 2: Upcoming Festivals -->
+    <section class="section container">
+      <div class="section-header">
+        <h2 data-i18n="festivals_title">Upcoming Festivals</h2>
       </div>
-    </div>
+      <div class="festival-cards">
+        <!-- Festival Card 1 -->
+        <div class="festival-card">
+          <div class="festival-date-ribbon">
+            <span class="day">26</span>
+            <span class="month-year" data-i18n="fest1_date">Feb 2025</span>
+          </div>
+          <div class="festival-details">
+            <h3 data-i18n="fest1_name">Maha Shivratri</h3>
+            <p data-i18n="fest1_desc">A night-long celebration of Lord Shiva with special Abhishekas and cultural
+              programs.</p>
+          </div>
+        </div>
+        <!-- Festival Card 2 -->
+        <div class="festival-card">
+          <div class="festival-date-ribbon">
+            <span class="day">13</span>
+            <span class="month-year" data-i18n="fest2_date">Apr 2025</span>
+          </div>
+          <div class="festival-details">
+            <h3 data-i18n="fest2_name">Chaitra Purnima</h3>
+            <p data-i18n="fest2_desc">Special prayers and temple car festival marking the auspicious full moon day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Contact Section -->
-    <div class="footer-section">
-      <h3>Contact Us</h3>
-      <a href="tel:+918123456789" class="contact-item">
-        <div class="contact-icon phone">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-          </svg>
-        </div>
-        <span>+91 81234 56789</span>
-      </a>
-      
-      <a href="mailto:info@someshwaratemple.org" class="contact-item">
-        <div class="contact-icon email">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-            <polyline points="22,6 12,13 2,6"></polyline>
-          </svg>
-        </div>
-        <span>info@someshwaratemple.org</span>
-      </a>
-      
-      <div class="contact-item">
-        <div class="contact-icon location">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-        </div>
-        <span>Hoskeri, Gokarna, Uttara Kannada</span>
-      </div>
-      
-      <!-- Social Media Links -->
-      <h3 style="margin-top: 12px;">Connect With Us</h3>
-      <div class="social-links">
-        <a href="https://wa.me/918123456789" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-        </a>
-        <a href="https://www.youtube.com/@yourtemple" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
-            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/yourtemple" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
-            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-          </svg>
-        </a>
-        <a href="https://www.instagram.com/yourtemple" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
-            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <!-- Bottom Bar -->
-  <div class="footer-bottom">
+
+    <!-- Festivals & Celebrations Section -->
+    <section class="section container">
+      <div class="card"
+        style="padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+        <h2 style="color: var(--maroon); font-family: 'Merriweather', serif; font-size: 2rem; margin-bottom: 20px;"
+          data-i18n="fest_celeb_title">Festivals & Celebrations</h2>
+        <p style="color: #444; font-size: 1.05rem; margin-bottom: 24px;" data-i18n="fest_celeb_desc">The temple
+          celebrates several major festivals every year with great grandeur and community participation:</p>
+
+        <ul style="list-style-type: disc; padding-left: 24px; color: #444; font-size: 1.05rem; line-height: 1.8;">
+          <li><strong style="color: #333;" data-i18n="fest_shivratri_title">Maha Shivratri</strong> <span
+              style="color: var(--saffron); font-weight: bold;">—</span> <span
+              data-i18n="fest_shivratri_desc">Night-long vigil with abhishekam, rudrabhisheka, and bhajans</span></li>
+          <li><strong style="color: #333;" data-i18n="fest_chaitra_title">Chaitra Purnima</strong> <span
+              style="color: var(--saffron); font-weight: bold;">—</span> <span data-i18n="fest_chaitra_desc">Annual
+              community feast and special procession</span></li>
+          <li><strong style="color: #333;" data-i18n="fest_ganesh_title">Ganesh Chaturthi</strong> <span
+              style="color: var(--saffron); font-weight: bold;">—</span> <span data-i18n="fest_ganesh_desc">Ganesha
+              pooja and cultural programmes</span></li>
+          <li><strong style="color: #333;" data-i18n="fest_makar_title">Makar Sankranti</strong> <span
+              style="color: var(--saffron); font-weight: bold;">—</span> <span data-i18n="fest_makar_desc">Tilgul
+              distribution and special poojas</span></li>
+          <li><strong style="color: #333;" data-i18n="fest_naga_title">Naga Panchami</strong> <span
+              style="color: var(--saffron); font-weight: bold;">—</span> <span data-i18n="fest_naga_desc">Worship of the
+              Naga shrine with milk abhisheka</span></li>
+          <li><strong style="color: #333;" data-i18n="fest_ugadi_title">Ugadi</strong> <span
+              style="color: var(--saffron); font-weight: bold;">—</span> <span data-i18n="fest_ugadi_desc">Kannada &
+              Tulu New Year celebrations</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Gallery Preview section  -->
+    <section class="section pattern-section">
+      <div class="container">
+        <h2 data-i18n="gallery_preview_title">Gallery Preview</h2>
+        <div class="gallery-slider-container">
+          <div class="gallery-slider-inner">
+            <div class="gallery-slider" id="gallerySlider">
+              <!-- Slide 1 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Etrance4.JPG" alt="Temple View 1" loading="lazy">
+              </div>
+              <!-- Slide 2 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Etrance6.JPG" alt="Temple View 2" loading="lazy">
+              </div>
+              <!-- Slide 3 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Etrance7.JPG" alt="Temple View 3" loading="lazy">
+              </div>
+              <!-- Slide 4 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Outerview1.JPG" alt="Temple View 4" loading="lazy">
+              </div>
+              <!-- Slide 5 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Outerview2.JPG" alt="Temple View 5" loading="lazy">
+              </div>
+              <!-- Slide 6 -->
+              <div class="gallery-slide">
+                <img src="assets/images/MainGodFarview nandi3.JPG" alt="Temple View 6" loading="lazy">
+              </div>
+              <!-- Slide 7 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Godwithbhat1.JPG" alt="Temple View 7" loading="lazy">
+              </div>
+              <!-- Slide 8 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Devotees2.JPG" alt="Temple View 8" loading="lazy">
+              </div>
+              <!-- Slide 9 -->
+              <div class="gallery-slide">
+                <img src="assets/images/GateFarview1.JPG" alt="Temple View 9" loading="lazy">
+              </div>
+              <!-- Slide 10 -->
+              <div class="gallery-slide">
+                <img src="assets/images/Outerfarview4.JPG" alt="Temple View 10" loading="lazy">
+              </div>
+
+            </div>
+
+            <!-- Navigation Controls -->
+            <div class="slider-controls">
+              <button class="slider-btn" id="galleryPrev" aria-label="Previous">‹</button>
+              <button class="slider-btn" id="galleryNext" aria-label="Next">›</button>
+            </div>
+
+            <!-- Dots Navigation -->
+            <div class="slider-dots" id="galleryDots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Dots Navigation -->
+    <div class="slider-dots" id="galleryDots"></div>
+    </div>
+    </div>
+    </section>
+
+    <section class="section container">
+      <h2 data-i18n="announcements_title">Temple Announcements</h2>
+      <div class="announcements-grid">
+        <!-- Announcement Card 1 -->
+        <div class="announcement-card">
+          <div class="announcement-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </div>
+          <div class="announcement-content">
+            <div class="announcement-date" data-i18n="ann1_date">January 15, 2025</div>
+            <h3 data-i18n="ann1_title">Maha Shivratri Celebrations</h3>
+            <p data-i18n="ann1_desc">Join us for the grand Maha Shivratri festivities. Special abhishekam and night-long
+              bhajans. Prasadam will be distributed to all devotees.</p>
+            <span class="announcement-badge important" data-i18n="ann1_badge">Important</span>
+          </div>
+        </div>
+
+        <!-- Announcement Card 2 -->
+        <div class="announcement-card">
+          <div class="announcement-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div class="announcement-content">
+            <div class="announcement-date" data-i18n="ann2_date">January 10, 2025</div>
+            <h3 data-i18n="ann2_title">Special Pooja Timings</h3>
+            <p data-i18n="ann2_desc">Updated temple timings for the upcoming festival season. Morning pooja starts at
+              5:30 AM. Please plan your visit accordingly.</p>
+            <span class="announcement-badge event" data-i18n="ann2_badge">Event</span>
+          </div>
+        </div>
+
+        <!-- Announcement Card 3 -->
+        <div class="announcement-card">
+          <div class="announcement-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+          </div>
+          <div class="announcement-content">
+            <div class="announcement-date" data-i18n="ann3_date">January 5, 2025</div>
+            <h3 data-i18n="ann3_title">Annadanam Program Launch</h3>
+            <p data-i18n="ann3_desc">New daily annadanam (free food distribution) program starting this month. Seeking
+              volunteers and sponsors for this noble cause.</p>
+            <span class="announcement-badge general" data-i18n="ann3_badge">General</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <p>© 2025 Shri Someshwara Temple Hoskeri. All Rights Reserved.</p>
-      <small>Version 1.0.1</small>
+      <!-- About Section -->
+      <div class="footer-section">
+        <div class="om-symbol">ॐ</div>
+        <h3 data-i18n="footer_temple_name">Shri Someshwara Temple</h3>
+        <p data-i18n="footer_location">Hoskeri, Gokarna, Karnataka</p>
+        <p data-i18n="footer_desc">Ancient temple dedicated to Lord Shiva, serving devotees with divine blessings.</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="footer-section">
+        <h3 data-i18n="footer_quick_links">Quick Links</h3>
+        <div class="quick-links-list">
+          <a href="index.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Home
+          </a>
+          <a href="about.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            About
+          </a>
+          <a href="timings.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Timings
+          </a>
+          <a href="gallery.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            Gallery
+          </a>
+          <a href="donations.html">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+              </path>
+            </svg>
+            Donations
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-section">
+        <h3 data-i18n="footer_contact_us">Contact Us</h3>
+        <a href="tel:+918123456789" class="contact-item">
+          <div class="contact-icon phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+          </div>
+          <span>+91 81234 56789</span>
+        </a>
+
+        <a href="mailto:info@someshwaratemple.org" class="contact-item">
+          <div class="contact-icon email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <span>info@someshwaratemple.org</span>
+        </a>
+
+        <div class="contact-item">
+          <div class="contact-icon location">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <span>Hoskeri, Gokarna, Uttara Kannada</span>
+        </div>
+
+        <!-- Social Media Links -->
+        <h3 style="margin-top: 12px;" data-i18n="footer_connect">Connect With Us</h3>
+        <div class="social-links">
+          <a href="https://wa.me/918123456789" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+            title="WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@yourtemple" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
+            title="YouTube">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/yourtemple" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+            title="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/yourtemple" target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="white">
+              <path
+                d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
-<script src="assets/js/main.js" defer></script>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer_copyright">© 2025 Shri Someshwara Temple Hoskeri. All Rights Reserved.</p>
+        <small>Version 1.0.1</small>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/language.js"></script>
 </body>
+
 </html>

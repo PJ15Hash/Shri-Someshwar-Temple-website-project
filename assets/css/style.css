@@ -261,9 +261,9 @@ main {
 
 /* Mobile Language Switcher */
 .mobile-lang-switcher {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: auto;
-  padding-top: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 12px;
+  padding-bottom: 12px;
   display: flex;
   gap: 8px;
   justify-content: center;
